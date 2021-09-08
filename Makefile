@@ -19,6 +19,6 @@ install-hooks:
 apkg:
 	rm -rf dist
 	flit build
-	atakama-pkg --pkg dist/<PLUGIN_WHEEL> --key ../keys/key.pem --crt ../keys/cert.pem --self-signed
+	atakama-pkg --pkg dist/plugin_template-1.0.0-py3-none-any.whl --key ../keys/key.pem --crt ../keys/cert.pem --self-signed
 
 .PHONY: test requirements lint publish install-hooks

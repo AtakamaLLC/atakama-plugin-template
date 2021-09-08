@@ -1,7 +1,6 @@
 """ Atakama plugin: Simple Detector """
 
 import logging
-from typing import Dict
 from atakama import DetectorPlugin
 
 
