@@ -7,11 +7,11 @@ requirements:
 	pip install -r requirements.txt
 
 lint:
-	python -m pylint <MODULE_NAME>
-	black <MODULE_NAME>
+	python -m pylint plugin_template
+	black plugin_template
 
 test:
-	PYTHONPATH=. pytest --cov <MODULE_NAME> --cov-fail-under=100 -v tests
+	PYTHONPATH=. pytest --cov plugin_template --cov-fail-under=100 -v tests
 
 install-hooks:
 	pre-commit install
